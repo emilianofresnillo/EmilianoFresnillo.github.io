@@ -1,0 +1,38 @@
+.MovieQuoteAndButtonContainer{
+    border: 5px solid $primary-1;
+    border-radius: 75px;
+    margin:15px 100px;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.QuoteTitle{
+    margin-top: 5px;
+}
+
+.QuoteInfo, .QuoteAuthor{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ButtonQuote{
+    padding: 10px;
+    color: white;
+    background-color: $primary-1;
+    border-radius: 30px;
+    border-color: none;
+    font-size: 25px;
+    transform: translate(0%, 50%);
+}
+
+.ButtonQuote:hover{
+    position: relative;
+    color: rgba(255, 255, 255, 0.666);
+    background-color: $txt-blue;
+    transition: 0.2s;
+    box-shadow: 0 5px 20px black;
+    font-size: 26px;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.FavsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 40px;
+}
+
+.FavBooks, .FavMovies, .QuoteTitle{
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  
+  ol, ul{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 40px;
+  }
+  
+  #FavOfTheFavs{
+    font-size: 45px;
+    text-transform: uppercase;
+    background-color: $background-2;
+    margin-left: 0;
+  }
