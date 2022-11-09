@@ -1,0 +1,83 @@
+.Projects{
+    padding: 0 10%;
+}
+
+.VideosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+
+
+.Video{
+    width: 100%;
+    border: solid 3.5px $primary-1;
+    border-radius: 5px;    
+&:hover{
+    cursor: pointer;
+    border-color: $terciary-1;
+    &+ .TitleContainer{
+        color: $terciary-1;
+    }
+}
+}
+
+
+.PhotosContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 100px;
+}
+
+.Photo{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 3.5px $primary-1;
+&:hover{
+    cursor: pointer;
+    border-color: $terciary-1;
+    &+ .TitleContainer{
+        color: $terciary-1;
+    }
+}
+}
+
+.ProjectName{
+    font-family: 'Caudex';
+    font-style: italic;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+    transform: translateY(-5px);
+}
+
+.ProjectYear{
+    font-family: 'Inter';
+    font-size: 20px;
+    margin: 0;
+}
+
+.ProjectName, .ProjectYear{
+&:hover{
+    cursor: default;
+}
+}
+
+.PopupImage{
+    position: fixed;
+    top: 0; left: 0;
+    background: black;
+    width: 20%;
+    z-index: 100;
+}
+
+.PopupImage span{
+position: absolute;
+top: 0; right: 10px;
+font-size: 60px;
+font-weight: bolder;
+color: $secondary-1;
+cursor: pointer;
+z-index: 100;
+}

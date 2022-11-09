@@ -1,0 +1,71 @@
+#InContact{
+    font-family: 'Caudex';
+    color: $primary-1;
+    margin-right: 50px;
+    cursor:default;
+}
+
+.ContactContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.WorkTogether, .GetInTouch{
+    font-family: 'Caudex';
+    font-size: 40px;
+    margin: 5px 50px;
+}
+
+
+.WorkText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 20px;
+}
+    
+
+.GetInTouch{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    display: flex;
+    padding-right: 400px;
+    padding-top: 10px;
+    font-family: 'Caudex';
+    font-size: 16px;
+    margin-top: 20px;
+    border: solid 3.5px $primary-1;
+}
+
+#DescriptionBox{
+    padding-bottom: 80px;
+}
+
+.SubmitButton{
+    border-style: none;
+    border-radius: 6px;
+    font-family: 'Caudex';
+    font-style: italic;
+    font-size: 25px;
+    padding: 5px 20px;
+    background-color: $terciary-1;
+    color: $secondary-1;
+    &:hover{
+        cursor: pointer;
+        font-size: 26px;
+        box-shadow: 0px 0px 4px black;
+    }
+
+.Icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.SocialIcon{
+    width: 3%;
+}
