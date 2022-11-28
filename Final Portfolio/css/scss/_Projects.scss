@@ -1,0 +1,115 @@
+.BodySpace{
+    margin-left: 25px;
+}
+
+.Projects{
+    padding: 0 10%;
+}
+
+.VideosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    @include Cellphone (430px) {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    }
+}
+
+.Videos{
+    display: flex;
+    flex-direction: column;
+}
+
+.Video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: solid 3.5px var(--primary-1);
+    border-radius: 5px;    
+&:hover{
+    cursor: pointer;
+    border-color: var(--terciary-1);
+    &+.TitleContainer{
+        .ProjectName, .ProjectYear{
+        color: var(--terciary-1) ;
+        }
+    }
+}
+}
+
+
+.PhotosContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 100px;
+    row-gap: 10px;
+    @include Cellphone (430px) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 0px;
+        }
+}
+
+.Photos{
+    display: flex;
+    flex-direction: column;
+}
+
+.Photo{
+    object-fit: cover;
+    max-height: 294.2px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 3.5px var(--primary-1);
+    @include Cellphone (430px){
+        max-height: 147.1px;
+    }
+&:hover{
+    cursor: pointer;
+    border-color: var(--terciary-1);
+    &+.TitleContainer{
+        .ProjectName, .ProjectYear{
+        color: var(--terciary-1);
+        }
+    }
+}
+}
+
+.TitleContainer{
+    margin-bottom: 1px;
+}
+
+.ProjectName{
+    color: var(--primary-1);
+    font-family: 'Caudex';
+    font-style: italic;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+    transform: translateY(-5px);
+    line-height: 30px;
+    @include Cellphone (430px){
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    }
+}
+
+.ProjectYear{
+    color: var(--primary-1);
+    font-family: 'Inter';
+    font-size: 20px;
+    margin: 5px 0px;
+    @include Cellphone (430px){
+        font-size: 15px;
+        }
+}
+
+.ProjectName, .ProjectYear{
+&:hover{
+    cursor: default;
+}
+}
+
