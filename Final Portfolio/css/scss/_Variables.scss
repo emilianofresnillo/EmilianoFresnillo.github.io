@@ -1,0 +1,17 @@
+:root {
+    --primary-1: black;
+    --secondary-1: white;
+    --terciary-1: #f07900;
+  }
+  
+  :root:has(.switch-input:checked) {
+    --primary-1: white;
+    --secondary-1: black;
+    --terciary-1: #f07900;
+  }
+
+  @mixin Cellphone ($cellphone) {
+    @media only screen and (max-width:$cellphone){
+        @content;
+    }
+}
