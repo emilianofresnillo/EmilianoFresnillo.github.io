@@ -1,0 +1,95 @@
+body {
+    background-color: var(--secondary-1);
+}
+
+.BodySpace{
+    margin-left: 50px;
+    @include Cellphone (430px){
+        margin-left: 10px;
+    }
+}
+
+
+#About {
+    color: var(--primary-1);
+    cursor: default;
+}
+
+
+.MePhoto{
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 75%;
+    margin-top: 0px;
+    @include Cellphone (430px){
+        margin-top: 50px;
+        width: 400px;
+        clip: rect(0px, 300px, 400px, 80px);
+        }
+}
+
+.AboutContainer{
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;   
+}
+
+.BioText{
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-1);
+    font-size: 50px;
+    text-indent: 225px;
+    padding-right: 50%;
+    @include Cellphone (430px){
+        font-size: 25px;
+        text-indent: 100px;
+    }
+}
+
+.DescriptionText{
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-1);
+    text-indent: 225px;
+    font-size: 50px;
+    padding-left: 50%;
+    margin-top: 200px;
+    padding-right: 25px;
+    @include Cellphone (430px){
+        margin-top: 150px;
+        font-size: 25px;
+        text-indent: 100px;
+    }
+}
+
+.FunFact{
+    font-family: 'Inter';
+    color: var(--primary-1);
+    @include Cellphone (430px){
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+
+.Resume{
+    padding: 5px 25px;
+    margin: 20px 50px 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--terciary-1);
+    font-family: 'Caudex';
+    font-size: 30px;
+    @include Cellphone (430px){
+        padding: 5px 15px;
+        font-size: 35px;
+        margin: 40px 10px 10px;
+    }
+    
+&:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px var(--primary-1);
+    transition: box-shadow 0.25s ease;
+}
+}
