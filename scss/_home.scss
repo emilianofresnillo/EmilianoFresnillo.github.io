@@ -1,0 +1,92 @@
+/* typing animation starts */
+
+.home-video-item{
+   padding: 9.55rem 0;
+   width: 100%;
+   justify-content: center;
+   @include Cellphone-1 (360px) {
+      padding: 2.3rem 0;
+  }
+}
+
+
+/* typing animation ends */
+
+ /* project categories starts*/ 
+
+ .categories-container{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+ }
+
+.image-container{
+   padding: 1rem 0;
+   position: relative;
+   width: 1700px;
+   @include Cellphone-1 (360px) {
+      width: 100%;
+  }
+   
+}
+
+.image-img{
+   display: block;
+   width: 100%;
+   border-radius: 10px;
+   @include Cellphone-1 (360px) {
+      width: 100%;
+      height: 6rem;
+      object-fit: cover;
+  }
+}
+
+.image-overlay{
+   padding: 2rem;
+   position: absolute;
+   top:0;
+   left:0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   font-family: "Neue Haas Medium";
+   font-size: 2rem;
+   color: var(--primary-2);
+   display: flex;
+   align-items: end;
+   opacity: 0;
+   transition: opacity .5s;
+
+   @include Cellphone-1 (360px) {
+      opacity: 1;
+      padding: 1rem;
+  }
+
+}
+
+.image-overlay-blur {
+   backdrop-filter: blur(6px);
+
+   @include Cellphone-1 (360px) {
+      backdrop-filter: blur(.5px);
+  }
+
+}
+
+.image-overlay:hover{
+   opacity: 1;
+}
+
+.image-title{
+   font-size: 2em;
+   @include Cellphone-1 (360px) {
+      font-size: 1.5rem;
+  }
+   
+}
+
+ /* project categories ends*/
+
+

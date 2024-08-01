@@ -1,0 +1,110 @@
+.contact-container{
+    @include Cellphone-1 (360px) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: flex-end;
+        height: 60vh;
+    }
+}
+
+.socials-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    @include Cellphone-1 (360px) {
+        gap: 3rem;
+    }
+}
+
+.social-wrapper{
+    font-size: 3rem;
+    @include Cellphone-1 (360px) {
+        font-size: 2rem;
+    }
+}
+
+
+.social-item1, .social-item2, .social-item3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+
+    @include Cellphone-1 (360px) {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.social-item1 span{
+    display: block;
+    border-top: .15rem solid #ccc;
+    width: 12rem;
+
+    @include Cellphone-1 (360px) {
+        width: 6.3rem;
+        border-top: .07rem solid #ccc;
+    }
+
+}
+
+
+.social-item2 span{
+    display: block;
+    border-top: 1px solid #ccc;
+    height: .1rem;
+    width: 12rem;
+
+    @include Cellphone-1 (360px) {
+        width: 6.3rem;
+        border-top: .07rem solid #ccc;
+    }
+
+}
+
+.social-item3 span{
+    display: block;
+    border-top: 1px solid #ccc;
+    height: 1rem;
+    width: 12rem;
+
+    @include Cellphone-1 (360px) {
+        width: 6.3rem;
+        border-top: .07rem solid #ccc;
+    }
+
+}
+
+
+.email-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3rem;
+
+    @include Cellphone-1 (360px) {
+        grid-template-columns: 1fr;
+        padding-bottom: 1rem;
+    }
+}
+
+.email-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "Neue Haas Medium";
+    font-size: 6rem;
+    line-height: 5.5rem;
+
+    @include Cellphone-1 (360px) {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+.email-button:hover{
+    filter: blur(6px);
+}
+
+.social span:hover, .social a:hover{
+        filter: blur(6px);
+}
+

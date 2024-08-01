@@ -1,0 +1,218 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-1:black;
+    --primary-2:#FCFCF4;
+  }
+
+html::-webkit-scrollbar{
+    width: .3vw;
+  }
+  
+html::-webkit-scrollbar-thumb{
+      background-color: #111;
+      border-radius: 3px;
+    }
+
+html::-webkit-scrollbar-thumb:hover{
+      background-color: #333;
+    }    
+    
+html::-webkit-scrollbar-track{
+          background-color: var(--primary-1);
+        }
+
+@font-face {
+    font-family: 'Neue Haas Thin';
+    src: url(/font/NeueHaasDisplayThin.ttf);
+}
+
+@font-face {
+  font-family: 'Neue Haas Roman';
+  src: url(/font/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {  
+  font-family: 'Neue Haas Medium';
+  src: url(/font/NeueHaasDisplayMediu.ttf);
+}
+
+@mixin Cellphone-1 ($cellphone) {
+  @media only screen and (max-width:$cellphone){
+      @content;
+  }
+}
+
+[data-aos="fade-left"]{
+  @include Cellphone-1 (361px) {
+    visibility: visible;
+}
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: var(--primary-2);
+    text-decoration: none;
+  }
+
+  body {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Neue Haas Thin";
+    color: var(--primary-2);
+    background-color: var(--primary-1);
+    letter-spacing: 2px;
+
+    @include Cellphone-1 (360px) {
+      padding: .5rem 1rem;
+  }
+  }
+
+/* arrow starts */ 
+
+.projects-arrow{
+  padding-bottom: 8rem;
+
+  @include Cellphone-1 (360px) {
+    padding: 0 .5rem 2rem 0;
+}
+}
+
+.projects-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.projects-down-arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #FFFF;
+  border-left: 3px solid #FFFF;
+  transform-origin: center;
+
+  @include Cellphone-1 (360px) {
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 2px solid #FFFF;
+    border-left: 2px solid #FFFF;
+}
+
+}
+
+.projects-down-arrow {
+  transform: rotate(-135deg);
+}
+
+.projects-down-arrow::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 30px;
+  background-color: #FFFF;
+  transform: rotate(-45deg) translate(10px, 4px);
+
+  @include Cellphone-1 (360px) {
+    width: 2px;
+    height: 15px;
+    transform: rotate(-45deg) translate(4.5px, 1px);
+}
+
+}
+
+/* arrow ends */ 
+
+// back arrow button starts // 
+
+
+
+
+.back-down-arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #FFFF;
+    border-left: 3px solid #FFFF;
+    transform-origin: center;
+    z-index: 1;
+
+    @include Cellphone-1 (360px) {
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid black;
+      border-left: 3px solid black;
+  }
+    
+ }
+
+.back-down-arrow {
+    transform: rotate(-405deg);
+ }
+
+.back-down-arrow::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: #FFFF;
+    transform: rotate(-45deg) translate(10px, 4px);
+    
+    @include Cellphone-1 (360px) {
+      width: 4px;
+      height: 20px;
+      transform: rotate(-45deg) translate(5.5px, 1px);
+      background-color: black;
+  }
+
+ }
+
+ .back-arrow-container{
+  @include Cellphone-1 (360px) {
+    padding-right: 12px;
+}
+ }
+
+.back-arrow-btn{
+  position: sticky;
+  top: 1.5rem;
+  mix-blend-mode: difference;
+
+  @include Cellphone-1 (360px) {
+    top: .5rem;
+    position: relative;
+    background-color: rgba(255,255,255, 0.9);
+    width: 3rem;
+    border-radius: 1rem;
+    height: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+}
+
+ button {
+  width: 3rem;
+  height: 4rem;
+  border-radius: 6rem;
+  border-style: none;
+  background-color: transparent;
+  &:hover{
+    cursor: pointer;
+  }
+
+  @include Cellphone-1 (360px) {
+    height: 1.5rem;
+}
+
+ }
+
+ // back arrow button end //

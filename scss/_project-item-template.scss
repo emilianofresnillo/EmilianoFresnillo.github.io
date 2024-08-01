@@ -1,0 +1,194 @@
+.medium-project-title{
+    padding: 6rem 0;
+    font-family: "Neue Haas Medium";
+    font-size: 6rem;
+    @include Cellphone-1 (360px) {
+        font-size: 2.9rem;
+        padding: 2rem 0;
+    }
+}
+
+.medium-project-image{
+    width: 100%;
+    height: 60rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+
+    @include Cellphone-1 (360px) {
+        height: 20rem;
+    }
+}
+
+.medium-project-image img{
+    width: 100%;
+    height: auto;
+
+    @include Cellphone-1 (360px) {
+        height: 20rem;
+    }
+}
+
+// PROJECT STARTS //
+
+.medium-project-item-container{
+    display: grid;
+    grid-template-columns: 1.3fr 2.7fr;
+    padding: 4rem 0 2rem 0;
+    gap: 3rem;
+
+    @include Cellphone-1 (360px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.medium-peoject-item-title {
+    padding-bottom: 3rem;
+    font-family: "Neue Haas Medium";
+    font-size: 2.5rem;
+    position: sticky;
+    top: 9rem;
+    
+    @include Cellphone-1 (360px) {
+        display: none;
+    }
+}
+
+.medium-project-item-text-container{
+    padding-right: 5rem;
+
+    @include Cellphone-1 (360px) {
+        padding-right: 0;
+    }
+
+}
+
+.medium-project-item-text-content{
+    display: flex;
+    gap: .5rem;
+    position: sticky;
+    top: 15rem ;
+
+    @include Cellphone-1 (360px) {
+        position: relative;
+        top: 0;
+    }
+}
+
+#medium-project-item-text-content-software{
+    font-family: "Neue Haas Medium";
+}
+
+.medium-project-item-text-content p{
+    padding-bottom: 3rem;
+}
+
+.medium-project-item-text-description{
+    line-height: 1.3rem;
+    position: sticky;
+    top: 19rem ;
+
+    @include Cellphone-1 (360px) {
+        position: relative;
+        top: 0;
+    }
+}
+
+// PROJECT IMAGES START //
+
+// PROJECT IMAGES START //
+
+.medium-project-item-image-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.medium-project-item-image{
+    width: 100%;
+    height: 45rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+
+    @include Cellphone-1 (360px) {
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.medium-project-item-image img{
+    width: 100%;
+    object-fit: cover;
+
+    @include Cellphone-1 (360px) {
+        width: 100%;
+        height: 20rem;
+    }
+
+}
+
+.short-project-item-image{
+    width: 100%;
+    height: 45rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+
+    @include Cellphone-1 (360px) {
+        display: none;
+    }
+}
+
+.short-project-item-image img{
+    width: 100%;
+    object-fit: cover;
+
+    @include Cellphone-1 (360px) {
+        width: 100%;
+        height: 20rem;
+    }
+
+}
+
+
+.medium-project-item-image-container-double{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include Cellphone-1 (360px) {
+        padding: .5rem 0;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+}
+
+.medium-project-item-image-container-double-img{
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+
+    @include Cellphone-1 (360px) {
+        height: 20rem;
+    }
+
+}
+
+.medium-project-item-image-container-double-img img{
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-25%);
+}
+ 
+
+// PROJECT IMAGES ENDS //
+
+// PROJECT ENDS //
